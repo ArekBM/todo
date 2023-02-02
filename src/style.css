@@ -1,0 +1,124 @@
+.navBtn {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    padding: 1rem;
+}
+
+.right {
+    flex: 2;
+    padding: 1rem;
+}
+
+#newTaskBtn {
+    background-color: #008CBA;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.addTask {
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+}
+
+.newFormOverlay.active {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+
+  .newFormOverlay {
+    display: none;
+  }
+
+  .newProjectOverlay {
+    display: none;
+  }
+
+  .newProjectOverlay.active {
+        z-index: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px;
+        width: 100vw;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        visibility: visible;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.6);
+        -webkit-transition: all .3s;
+        transition: all .3s;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 5.8vw;
+  }
+
+  .projectBtns {
+    font-size: 14px;
+  }
+
+  .notesOverlay {
+    display: none;
+  }
+
+  .notesOverlay.active {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }

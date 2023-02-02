@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do</title>
+        <h1>To-Do List</h1>
+        <link href="style.css">
+    </head>
+<body>
+    <div class="newFormOverlay">
+        <form class="newTaskForm">
+            <div class="exitForm">
+                <button class="exitFormBtn">&times;</button>
+            </div>
+            <textarea placeholder="New task..." id="newTaskTitle" required></textarea>
+            <textarea placeholder="Description..." id="newTaskDescription"></textarea>
+            <input type="date" id="newTaskDueDate">
+            <input type="textarea" id="projectCategory">
+            <input id="newFormSubmit" type="submit" value="Add Task">
+            <div class="newFormFooter">
+                <div class="Priority">
+                    <h2>Priority</h2>
+                    <input type="radio" class="priority" id="low" value="low" required>Low
+                    <input type="radio" class="priority" id="medium" value="medium" required>Medium
+                    <input type="radio" class="priority" id="high" value="high" required>High
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <section class="container">
+        <div class="left">
+            <div class="mail">
+                <nav class="navbar">
+                    <button class="navBtn" id="home">Home</button>
+                    <button class="navBtn" id="today">Today</button>
+                    <button class="navBtn" id="thisWeek">This Week</button>
+                </nav>
+            </div>
+            <div class="projectsPage">
+                <h1>Projects</h1>
+                <button class="newProjectBtn">New Project</button>
+                <nav class="projects">
+
+                </nav>
+            </div>
+            <div class="newProjectOverlay">
+                <div class="exitProjectForm">
+                    <button class="exitProjectFormBtn">&times;</button>
+                </div>
+                <form class="newProjectForm">
+                    <input type="textarea" id="projectTitle">
+                    <input class="newProjectSubmit" type="submit" value="Add Project">
+                </form>
+            </div>
+            <div class="notes">
+                <h1 id="notesPage">Notes</h1>
+            </div>
+            <div class="notesOverlay">
+                <div class="exitNote">
+                    <button class="exitNoteBtn">&times;</button>
+                </div>
+                <form class="newNoteForm">
+                    <input type="textarea" id="noteTitle" required>
+                    <textarea id="noteDescription" required></textarea>
+                    <input type="submit" id="notesSubmit">
+                </form>
+            </div>
+            <div class="addTask">
+                <button class="navBtn" id="newTaskBtn">+</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="content">
+            </div>
+        </div>
+    </section>
+</body>
+<script src="main.js"></script>
+</html>
